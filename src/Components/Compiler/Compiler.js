@@ -42,6 +42,7 @@ export default class Compiler extends Component {
       "https://judge0-ce.p.rapidapi.com/submissions",
       {
         method: "POST",
+        params: {base64_encoded: 'true', fields: '*'},
         headers: {
           "x-rapidapi-host": "judge0-ce.p.rapidapi.com",
           "x-rapidapi-key": "685f2520e9msh17e6f35f88f5ca5p1e2cccjsnf52fb9e69570", // Get yours for free at https://rapidapi.com/judge0-official/api/judge0-ce/
